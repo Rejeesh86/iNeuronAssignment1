@@ -1,23 +1,21 @@
 package assignment1;
 
-import java.util.Scanner;
-
-public class Task9BreakExecutionIf85IsFound 
+public class Task9BreakExecutionIf85IsFoundUpdated 
 {
 
 	public static void main(String[] args)
 	{	
+		int input[] = {12,34,66,85,900};
 		
-		Scanner sc = new Scanner(System.in);
-		int input;
-		System.out.println("Program will break the current execution untill user input 85");
-		do
+		for (int i=0;i<input.length;i++)
 		{
-			System.out.println("Enter your input");
-			input = sc.nextInt();
-			
-		}while (input!=85);
-			
-		System.out.println("85 entered by user85. Execution breaking");			
+			if (input[i]!=85)
+			{
+				System.out.println(input[i]);
+			}
+			else
+				break;
+		}
+		
 	}
 }
